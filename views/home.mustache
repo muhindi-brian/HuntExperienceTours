@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- <div id="preloader"></div> -->
+    <!-- Start-Header-Section -->
+    <header class="header-type-three">
+        <!-- Topbar-start-area -->
+        <div class="header_top_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="contact_wrapper_top">
+                            <ul class="header_top_contact">
+                                {{>headcontact}}
+                            </ul>
+                            <div class="topbar-icon">
+                                <ul>
+                                    {{>social}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End-Topbar-area -->
+        <!-- Menu-start-area -->
+        <div class="header-fixed header-one">
+            <div class="container">
+                <!-- NAVIGATION HERE (PARTIALS/NAV) -->
+                {{>nav}}
+            </div>
+        </div>
+        <!-- End-Menu-area-->
+    </header>
+    <!-- Start-Main-Section -->
+    <main class="hero-slide-three ">
+        {{>slider}}
+    </main>
+    <!-- End-Main-Section -->
+    <!-- searching area -->
+    <div class="search_area search_area_three">
+        <div class="container">
+
+            <!--Search Form-->
+            <form class=" row search_area-inner">
+                <div class="form-group icon_down">
+                    <select class="selectpicker search-fields form-control">
+                        <option value="0"> Select Tour</option>
+                        <option value="1"> Nairobi National Park</option>
+                        <option value="2"> David Sheldrick Wildlife Trust</option>
+                        <option value="3"> Giraffe Centre</option>
+                        <option value="4"> Karura Forest Reserve</option>
+                        <option value="5"> Karen Blixen Museum</option>
+                        <option value="6"> Nairobi National Museum</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" class="zt-control" placeholder="Adults" min="1" max="100">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="zt-control" placeholder="Childs" min="1" max="100">
+                </div>
+                <div class="form-group date input-datepicker">
+                    <input type="text" class="form-control " id="datepicker" name="DateFron" data-date-format="yyyy-mm-dd" placeholder="Check In" value="">
+                    <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                </div>
+                <div>
+                    <button type="submit" class="btn-tour"> Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End-searching-area-->
+    <!-- about-area -->
+    <section class="ws-section-spacing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="video-img-box">
+                        <img src="images/gallery-5.jpg" alt="">
+                        <div class="pulse-box">
+                            <a href="https://www.youtube.com/watch?v=4PJENssSlBU" data-lity class="pulse-icon"><i
+                                    class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>{{desription1}}</h2>
+                        <p>{{description}}</p>
+                        <!-- <p>Tempor dolor vero dolor sadipscing eos erat dolor sanctus aliquyam et, et justo labore lorem kasd clita consetetur no no ut erat dolor. </p> -->
+
+                        <a href="/about" class="read-btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-about-area -->
+    <!-- service-section -->
+    <section class="service-one ws-section-spacing bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-title ">
+                        <h2 class="title">Why Choose Us</h2>
+                        <h4 class="sub-title">{{whyus}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/abouthunt.png" alt="about-2">
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="servicebox-one service-type-two">
+                                <div class="service-box-icon"><i class="fas fa-route"></i></div>
+                                <h3 class="service-box-title">Best Travel Agent</h3>
+                                <p class="service-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="btn" href="#">See more</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="servicebox-one service-type-two">
+                                <div class="service-box-icon"><i class="fab fa-avianex"></i></div>
+                                <h3 class="service-box-title">Best Price </h3>
+                                <p class="service-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit .
+                                </p>
+                                <a class="btn" href="#">See more</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="servicebox-one service-type-two">
+                                <div class="service-box-icon"><i class="fas fa-bullhorn"></i></div>
+                                <h3 class="service-box-title">Trust & Safety</h3>
+                                <p class="service-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="btn" href="#">See more</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="servicebox-one service-type-two">
+                                <div class="service-box-icon"><i class="fa fa-home"></i></div>
+                                <h3 class="service-box-title">Amazing Tour</h3>
+                                <p class="service-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="btn" href="#">See more</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="servicebox-one service-type-two">
+                                <div class="service-box-icon"><i class="fas fa-ticket-alt"></i></div>
+                                <h3 class="service-box-title">Ticket Booking</h3>
+                                <p class="service-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="btn" href="#">See more</a>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="servicebox-one service-type-two">
+                                <div class="service-box-icon"><i class="fa fa-bed"></i></div>
+                                <h3 class="service-box-title">Hotel Booking</h3>
+                                <p class="service-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit .
+                                </p>
+                                <a class="btn" href="#">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-service-section -->
+    <!-- Counter-section -->
+    <section class="ws-section-spacing bg-img-counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="counter-box">
+                        <span class="count-icon"><i class="fas fa-user"></i></span>
+                        <h2 class="counter">2240</h2>
+                        <h3 class="count-title">Customers</h3>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="counter-box">
+                        <span class="count-icon"><i class="fas fa-umbrella-beach"></i></span>
+                        <h2 class="counter">540</h2>
+                        <h3 class="count-title">Destination</h3>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="counter-box">
+                        <span class="count-icon"><i class="fas fa-luggage-cart"></i></span>
+                        <h2 class="counter">3340</h2>
+                        <h3 class="count-title">Tours</h3>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="counter-box">
+                        <span class="count-icon"><i class="fas fa-life-ring"></i></span>
+                        <h2 class="counter">240</h2>
+                        <h3 class="count-title">Support Cases</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Counter-section -->
+    <!-- Start-Package-Section -->
+    <section class="ws-section-spacing bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-title ">
+                        <h2 class="title">Popular Tour Package</h2>
+                        <h4 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row masonry-item">
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="images/pack-1.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3>Dubai – All Stunning Places</h3>
+                            <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">Book Now</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="images/pack-2.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3>Thailand – All Stunning Places</h3>
+                            <p>4 Days, 5 Nights Start From <span>$600</span></p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">Book Now</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="images/pack-3.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3>Brazil – All Stunning Places</h3>
+                            <p>4 Days, 5 Nights Start From <span>$500</span></p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">Book Now</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="images/pack-4.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3>Italy – All Stunning Places</h3>
+                            <p>4 Days, 5 Nights Start From <span>$550</span></p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">Book Now</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="images/pack-5.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3>England – All Stunning Places</h3>
+                            <p>4 Days, 5 Nights Start From <span>$600</span></p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">Book Now</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 masonry">
+                    <div class="package-one">
+                        <div class="img-wapper">
+                            <img src="images/pack-6.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3>India – All Stunning Places</h3>
+                            <p>4 Days, 5 Nights Start From <span>$400</span></p>
+                            <ul class="ct-action">
+                                <li><a href="#" class="booking-btn">Book Now</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- item-end -->
+            </div>
+        </div>
+    </section>
+    <!-- End-Package-Section -->
+    <!-- offer-section -->
+    <section class="offer-area-one same-section-spacing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="add-area ">
+                        <h3>1000 $ for person - 6 nights</h3>
+                        <h2>Discount <span class="text-theme">10-30% </span> Off</h2>
+                        <p>If you’re looking for a truly memorable family break here you find the lowest price on the right hotel for you. It's indescribable. Stay up to date and check out the deals for these trending destinations.</p>
+                        <a href="package-list.html" class="site-button white">See Promotion Tours</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End-offer-section -->
+    <!-- Desination-slide -->
+    <section class="same-section-spacing desination-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-title ">
+                        <h2 class="title">Popular Destinations</h2>
+                        <h4 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="destination-slide">
+                        <div class="item">
+                            <div class="place-box">
+                                <div class="wapper-img">
+                                    <img src="images/des-1.jpg" alt="">
+                                    <a href="place-details.html" class="pop-btn">View All Tours</a>
+                                </div>
+
+                                <div class="desi-inner">
+                                    <h4>florida sea </h4>
+                                    <p>Miami Beach</p>
+                                    <span class="float-right">4 tours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item">
+                            <div class="place-box">
+                                <div class="wapper-img">
+                                    <img src="images/des-2.jpg" alt="">
+                                    <a href="place-details.html" class="pop-btn">View All Tours</a>
+                                </div>
+
+                                <div class="desi-inner">
+                                    <h4>utah mountains </h4>
+                                    <p>sunset</p>
+                                    <span class="float-right">3 tours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item">
+                            <div class="place-box">
+                                <div class="wapper-img">
+                                    <img src="images/des-3.jpg" alt="">
+                                    <a href="place-details.html" class="pop-btn">View All Tours</a>
+                                </div>
+
+                                <div class="desi-inner">
+                                    <h4>francisco</h4>
+                                    <p>california city</p>
+                                    <span class="float-right">6 tours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item">
+                            <div class="place-box">
+                                <div class="wapper-img">
+                                    <img src="images/des-4.jpg" alt="">
+                                    <a href="place-details.html" class="pop-btn">View All Tours</a>
+                                </div>
+
+                                <div class="desi-inner">
+                                    <h4>Paris </h4>
+                                    <p>Eiffel Tower</p>
+                                    <span class="float-right">7 tours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item">
+                            <div class="place-box">
+                                <div class="wapper-img">
+                                    <img src="images/des-5.jpg" alt="">
+                                    <a href="place-details.html" class="pop-btn">View All Tours</a>
+                                </div>
+
+                                <div class="desi-inner">
+                                    <h4>Italy </h4>
+                                    <p>canal City</p>
+                                    <span class="float-right">5 tours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="item">
+                            <div class="place-box">
+                                <div class="wapper-img">
+                                    <img src="images/des-6.jpg" alt="">
+                                    <a href="place-details.html" class="pop-btn">View All Tours</a>
+                                </div>
+
+                                <div class="desi-inner">
+                                    <h4>Australia </h4>
+                                    <p>City</p>
+                                    <span class="float-right">4 tours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Desination-slide -->
+    <!-- Testimonial-section -->
+    <section class="same-section-spacing  bg-gray Testimonial-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-title ">
+                        <h2 class="title">What Travellers Say About Us</h2>
+                        <h4 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testi-slide-one">
+                        <div class="item">
+                            <img src="images/testi-1.jpg" alt="testi-one">
+                            <div class="testi-content">
+                                <p>Nonumy et dolor erat clita voluptua est gubergren consetetur, ea kasd lorem set dolores sit voluptua. Eos dollar sea amet erat sed.</p>
+                                <span class="rating"> <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i></span>
+                                <h4>Daniel Baci</h4>
+                                <p>Thailand Trip </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/testi-3.jpg" alt="testi-one">
+                            <div class="testi-content">
+                                <p>Nonumy et dolor erat clita voluptua est gubergren consetetur, ea kasd lorem set dolores sit voluptua. Eos dollar sea amet erat sed.</p>
+                                <span class="rating"> <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i></span>
+                                <h4>Jhonthan Smith</h4>
+                                <p>London Trip</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/testi-2.jpg" alt="testi-one">
+                            <div class="testi-content">
+                                <p>Nonumy et dolor erat clita voluptua est gubergren consetetur, ea kasd lorem set dolores sit voluptua. Eos dollar sea amet erat sed.</p>
+                                <span class="rating"> <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i></span>
+                                <h4>Emily Joe</h4>
+                                <p>USA</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/testi-4.jpg" alt="testi-one">
+                            <div class="testi-content">
+                                <p>Nonumy et dolor erat clita voluptua est gubergren consetetur, ea kasd lorem set dolores sit voluptua. Eos dollar sea amet erat sed.</p>
+                                <span class="rating"> <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i></span>
+                                <h4>John Doe</h4>
+                                <p>USA Trip </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Testimonial-section -->
+    <!-- Blog-section -->
+    <section class="ws-section-spacing blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-title ">
+                        <h2 class="title">Travel guide and Expert Advice</h2>
+                        <h4 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="package-one blog-box">
+                        <div class="img-wapper">
+                            <img src="images/pack-4.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="blog-details.html">Eos ut takimata dolor dolor.</a></h3>
+                            <ul class="meta-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> Jhon Doe</a></li>
+                                <li><a href="#"><i class="far fa-calendar-alt"></i> 12 june, 2019</a></li>
+                                <li><a href="#"><i class="fa fa-comments"></i> 10</a></li>
+                            </ul>
+                            <p>Erat erat ea amet et amet et lorem at labore invidunt, aliquyam gubergren duo duo dolor ipsum invidunt aliquyam diam.</p>
+                            <a href="#" class="read-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="package-one blog-box">
+                        <div class="img-wapper">
+                            <img src="images/pack-5.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="blog-details.html">Eirmod ut sanctus diam sed.</a></h3>
+                            <ul class="meta-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> Jhon Doe</a></li>
+                                <li><a href="#"><i class="far fa-calendar-alt"></i> 15 june, 2019</a></li>
+                                <li><a href="#"><i class="fa fa-comments"></i> 10</a></li>
+                            </ul>
+                            <p>Erat erat ea amet et amet et lorem at labore invidunt, aliquyam gubergren duo duo dolor ipsum invidunt aliquyam diam.</p>
+                            <a href="#" class="read-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="package-one blog-box">
+                        <div class="img-wapper">
+                            <img src="images/pack-6.jpg" alt="package-img">
+                        </div>
+                        <div class="package-content">
+                            <h3><a href="blog-details.html">Eirmod diam amet diam clita</a></h3>
+                            <ul class="meta-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> Jhon Doe</a></li>
+                                <li><a href="#"><i class="far fa-calendar-alt"></i> 20 june, 2019</a></li>
+                                <li><a href="#"><i class="fa fa-comments"></i> 10</a></li>
+                            </ul>
+                            <p>Erat erat ea amet et amet et lorem at labore invidunt, aliquyam gubergren duo duo dolor ipsum invidunt aliquyam diam.</p>
+                            <a href="#" class="read-btn">Read More <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Blog-section -->
+    <!-- Partner-section -->
+    <section class="same-section-spacing bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- <div class="center-title ">
+                        <h2 class="title">Our Partners</h2>
+                        <h4 class="sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="client-slide">
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client1.png" alt="">
+                            </div>
+                        </div> -->
+                        <!-- item -->
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client2.png" alt="">
+                            </div>
+                        </div> -->
+                        <!-- item -->
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client3.png" alt="">
+                            </div>
+                        </div> -->
+                        <!-- item -->
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client1.png" alt="">
+                            </div>
+                        </div> -->
+                        <!-- item -->
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client2.png" alt="">
+                            </div>
+                        </div> -->
+                        <!-- item -->
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client3.png" alt="">
+                            </div>
+                        </div> -->
+                        <!-- item -->
+                        <!-- <div class="item">
+                            <div class="img-wapper">
+                                <img src="images/client4.png" alt="">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Partner-section -->
+    <!-- Footer-section -->
+    {{>footer}}
+    <!-- End-footer-section -->
+    <!-- Scripts -->
+    {{>scripts}}
+
+</body>
+
+</html>
